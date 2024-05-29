@@ -14,6 +14,7 @@ a {
 }
 
 .navigaton {
+    position: relative;
     display: flex;
     background-color: #131921;
     justify-content: space-between;
@@ -24,6 +25,9 @@ a {
 .navigaton .logo {
     width: 100px;
     height: auto;
+}
+.mobile-user-icon {
+    display: none;
 }
 
 .nav-country {
@@ -266,4 +270,104 @@ footer {
     color: #fff;
     background-color: #131921;
     padding: 20px 60px;
+}
+
+@media only screen and (max-width: 700px) {
+    .navigaton {
+        flex-wrap: wrap;
+    }
+    .nav-search {
+        order: 7;
+        margin: 15px 0 5px;
+        min-width: 400px;
+    }
+    .box-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 10px;
+    }
+
+    .box-col {
+        margin: 0 10px;
+        max-width: 30%;
+    }
+    .mobile-user-icon {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 699px) {
+    .navigation {
+        flex-wrap: wrap;
+    }
+    .nav-country {
+        display: none;
+    }
+    .nav-language {
+        display: none;
+    }
+    .nav-text {
+        display: none;
+    }
+    .nav-search {
+        min-width: 500px;
+    }
+    .nav-bottom {
+        font-size: 13px;
+        gap: 10px;
+        overflow-x: scroll;
+    }
+    .nav-bottom::-webkit-scrollbar {
+        display: none;
+    }
+    .nav-bottom p {
+        text-wrap: nowrap;
+    }
+    .mobile-user-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+    }
+
+    .mobile-user-icon img {
+        width: 30px;
+    }
+    .box-row {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .box-col {
+        max-width: 100%;
+    }
+    .products-slider {
+        margin: 0 8px;
+        padding: 10px;
+    }
+    .products-slider img {
+        width: 120px;
+        height: 120px;
+    }
+    .products-slider-with-price {
+        margin: 0 8px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .products-slider-with-price .product-card img{
+        height: 120px;
+        background-size: cover;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer p {
+        text-align: center;
+        margin-top: 8px;
+    }
 }
