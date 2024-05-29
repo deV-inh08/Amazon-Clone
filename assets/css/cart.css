@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Outfit, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigaton {
+    display: flex;
+    background-color: #131921;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+.navigaton .logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-country {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #c4c4c4;
+}
+.nav-country > .location {
+    height: 20px;
+    width: auto;
+}
+.nav-country h1 {
+    font-size: 18px;
+    color: #fff;
+}
+.nav-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: gray;
+    max-width: 1000px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.nav-search-gategory {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    background-color: #e5e5e5;
+    border-radius: 4px 0 0 4px;
+}
+.nav-search-input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+}
+.nav-search-icon {
+    max-width: 41px;
+    padding: 8px;
+    background-color: #ffd64f;
+    border-radius: 0 4px 4px 0;
+}
+.nav-language {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.nav-text {
+    margin-left: 15px;
+}
+.nav-text p {
+    font-size: 14px;
+}
+.nav-text h1 {
+    font-size: 14px;
+}
+.nav-cart {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+}
+.nav-cart h4 {
+    color: #fff;
+}
+.nav-bottom {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #232F3E;
+}
+.nav-bottom > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.nav-bottom > div > p {
+    color: #fff;
+    font-weight: bold;
+    
+}
+.nav-bottom > a {
+    color: #fff;
+    padding: 0 15px;
+}
